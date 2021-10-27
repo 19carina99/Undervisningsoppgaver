@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="border: groove black; width: 90px;">  Quiz! </h1>
+ 
+    <h2 style="margin-top: 30px; font-size: 20px;"> Spørsmål 1 </h2>
+    <div style="margin-top: -15px;"> <u> Hva heter hunden min? </u> </div>
+    <div id="ja1" onclick="svar1()"> Bindi </div>
+    <div id="nei1" onclick="svar1()"> Bunny </div>
+    <div id="nei2" onclick="svar1()"> Barney </div>
+
+    <h3 style="font-size: 20px; margin-top: 20px;"> Spørsmål 2 </h3>
+    <div style="margin-top: -15px;"> <u> Hvor gammel er jeg? </u> </div>
+    <div id="nei3" onclick="svar2()"> 30 </div>
+    <div id="nei4" onclick="svar2()"> 25 </div>
+    <div id="ja2" onclick="svar2()"> 22 </div>
+
+    <h4 style="margin-top: 20px; font-size: 20px;"> Spørsmål 3 </h4>
+    <div style="margin-top: -20px;"> <u> Hva slags type bil kjører jeg? </u> </div>
+    <div id="nei5" onclick="svar3()"> BMW </div>
+    <div id="ja3" onclick="svar3()"> Volvo </div>
+    <div id="nei6" onclick="svar3()"> Mercedes </div>
+
+    <h5 style="font-size: 20px; margin-top: 20px;"> Spørsmål 4 </h5>
+    <div style="margin-top: -30px;"> <u> Hva er favoritt filmserien min? </u> </div>
+    <div id="ja4" onclick="svar4()"> Harry Potter </div>
+    <div id="ja5" onclick="svar4()"> Star Wars </div>
+    <div id="ja6" onclick="svar4()"> Lord of the rings </div>
+
+    <h6 style="font-size: 20px; margin-top: 20px;"> Spørsmål 5 </h6>
+    <div style="margin-top: -40px;"> <u> Hva er favoritt spillet mitt på PC? </u> </div>
+    <div id="nei7" onclick="svar5()"> Pogostuck </div>
+    <div id="nei8" onclick="svar5()"> Minecraft </div>
+    <div id="ja7" onclick="svar5()"> WOW </div>
+
+    <script>
+     function svar1() {
+         document.getElementById('ja1').innerHTML = 'Riktig :)'
+         document.getElementById('nei1').innerHTML = 'Feil :/'
+         document.getElementById('nei2').innerHTML = 'Feil :/'
+     }
+     function svar2() {
+        document.getElementById('nei4').innerHTML = 'Feil :/'
+        document.getElementById('nei3').innerHTML = 'Feil :/'
+        document.getElementById('ja2').innerHTML = 'Riktig :)'
+     }
+     function svar3() {
+        document.getElementById('nei5').innerHTML = 'Feil :/'
+        document.getElementById('ja3').innerHTML = 'Riktig :)'
+        document.getElementById('nei6').innerHTML = 'Feil :/'
+     }
+     function svar4() {
+        document.getElementById('ja4').innerHTML = 'Riktig :)'
+        document.getElementById('ja5').innerHTML = 'Riktig :)'
+        document.getElementById('ja6').innerHTML = 'Riktig :)'
+     }
+     function svar5() {
+        document.getElementById('nei8').innerHTML = 'Feil :/'
+        document.getElementById('nei7').innerHTML = 'Feil :/'
+        document.getElementById('ja7').innerHTML = 'Riktig :)'
+     }
+    </script>
+
+</body>
+</html>
